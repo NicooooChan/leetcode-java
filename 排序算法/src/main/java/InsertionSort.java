@@ -3,6 +3,7 @@ import java.util.Arrays;
 /**
  * @ClassName InsertionSort1
  * @Description 在要排序的一组数中，假定前n-1个数已经排好序，现在将第n个数插到前面的有序数列中，使得这n个数也是排好顺序的。如此反复循环，直到全部排好顺序
+ * 平均时间复杂度：O(n2)
  * @Author 陈急舟
  * @Date 2020/07/28 13:36:46
  * @Version 1.0

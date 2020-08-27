@@ -21,6 +21,7 @@ import java.util.Arrays;
  * 快速排序之所以比较快，是因为相比冒泡排序，每次的交换都是跳跃式的，每次设置一个基准值，将小于基准值的都交换到左边，大于基准值的都交换到右边，这样不会像冒泡一样每次都只交换相邻的两个数，因此比较和交换的此数都变少了，速度自然更高。当然，也有可能出现最坏的情况，就是仍可能相邻的两个数进行交换。
  *
  * 快速排序基于分治思想，它的时间平均复杂度很容易计算得到为O(NlogN)。
+ * 平均时间复杂度：O(N*logN)
  * @Author 陈急舟
  * @Date 2020/07/29 13:10:16
  * @Version 1.0
@@ -47,7 +48,7 @@ public class QuickSort {
      * @param right
      */
     public static void sort(int[] array, int left, int right) {
-        if(left > right) {
+        if(left >= right) {
             return;
         }
         // base中存放基准数
